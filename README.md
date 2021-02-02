@@ -1,30 +1,23 @@
-# negaodabl-discord-bot
-Bot para o [Discord](https://discord.com/new) para aperta a braba.
+# incomodadores-discord-bot
 
-Reproduz áudios engraçados e brabos do Negão da BL. 🎵 Mery pfff 🎵 Aperta braba 🎵
+Bot para o [Discord](https://discord.com/new) para chamar o xesque.
 
-Todos os áudios são do brabo [MC Negão da BL](https://www.youtube.com/channel/UCUlU4ipnSw0JCX2j7VI0FGg).
+Reproduz áudios clássicos dos Incomodadores SC.
 
 ## Commands
 
-O bot tem apenas o comando que é: 
-Prefix: `negaodabl`
+O bot tem apenas o comando que é:
+Prefix: `xesque`
 
-- `negaodabl [help]` ou `negaodabl` - mostra comandos disponiveis
-- `negaodabl [option]` - reproduz o áudio da opção escolhida
-- `negaodabl random` - reproduz um áudio aleatório
+- `xesque [help]` ou `xesque` - mostra comandos disponiveis
+- `xesque [option]` - reproduz o áudio da opção escolhida
+- `xesque random` - reproduz um áudio aleatório
 
-Exemplos: 
+Exemplos:
+
 ```shell
-negaodabl braba
+xesque paradao-no-bailao
 ```
-
-## Hacktoberfest da Bl
-![hacktober](./hacktoberfestdabl.png)
-
-Repo aberto para novos comandos criados pela comunidade.
-
-Crie sua ideia nas issues para melhor organização.
 
 ## Developing
 
@@ -33,11 +26,13 @@ You're going to need [Node.js](https://nodejs.org/en/) or [Docker](https://docs.
 1. Node.js
 
 First install all dependencies:
+
 ```shell
 $ npm i
 ```
 
 Start the bot:
+
 ```shell
 $ npm start
 ```
@@ -47,15 +42,15 @@ $ npm start
 Build:
 
 ```shell
-$ docker build -t negaodabl .
+$ docker build -t xesque .
 ```
 
 Run:
 
 ```shell
-$ docker run negaodabl
-````
+$ docker run xesque
+```
 
 ### Adicionando novos audios ou comandos
 
-Todos áudios disponíveis estão no folder `audios` e existe um Map com todos os comandas dos áudios no `index.js`.
+Todos áudios disponíveis estão no folder `audios` e existe um Map com todos os comandas dos áudios no arquivo `audio.js`.
