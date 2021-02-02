@@ -68,7 +68,7 @@ async function execute(message) {
     const opt = audioOptions[option];
     if (!opt) {
       return message.channel.send(
-        "Opção não conhecida pra incomodação :compression: :angry:!"
+        "Opção não conhecida pra incomodação :angry:!"
       );
     }
     audio = opt.file;
@@ -77,7 +77,7 @@ async function execute(message) {
   try {
     const connection = await voiceChannel.join();
     const dispatcher = connection.play(audio, { volume: 0.9 });
-    message.channel.send("CHAMA XESQUE :compression: :angry:");
+    message.channel.send("CHAMANDO XESQUE :cold_face: :japanese_goblin:");
 
     dispatcher.on("finish", () => {
       voiceChannel.leave();
