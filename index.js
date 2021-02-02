@@ -17,7 +17,7 @@ Client.on("message", async (message) => {
  */
 const getDoc = (commands) => {
   const description = `O bot reproduz audios dos Incomodadores SC.
-        O unico comando disponivel é \`${prefix} [option]\`, exemplo: \`${prefix} mery\`.
+        O unico comando disponivel é \`${prefix} [option]\`, exemplo: \`${prefix} parado_no_bailao\`.
         **Comandos**:`;
 
   const HEmbed = new MessageEmbed()
@@ -43,7 +43,7 @@ async function execute(message) {
   const args = message.content.split(" ");
   const option = args[1];
   if (!option || option === "help") {
-    const embed = getDoc(audioOptions);
+    const embed = getDoc(Object.values(audioOptions));
     return message.channel.send({ split: true, embed });
   }
   const voiceChannel = message.member.voice.channel;

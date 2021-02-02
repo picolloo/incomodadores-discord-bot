@@ -16,7 +16,7 @@ Prefix: `xesque`
 Exemplos:
 
 ```shell
-xesque paradao-no-bailao
+xesque parado-no-bailao
 ```
 
 ## Developing
