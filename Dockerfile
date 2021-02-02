@@ -9,6 +9,6 @@ COPY . /app
 
 WORKDIR /app
 
-RUN npm i
+RUN yarn
 
-CMD ["npm","start"]
+CMD ["yarn","start"]
