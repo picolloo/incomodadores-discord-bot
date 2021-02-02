@@ -63,9 +63,9 @@ async function execute(message) {
   let audio;
   if (option === "random") {
     const key = getRandom(audioOptions);
-    audio = audioOptions.get(key).file;
+    audio = audioOptions[key].file;
   } else {
-    const opt = audioOptions.get(option);
+    const opt = audioOptions[option];
     if (!opt) {
       return message.channel.send(
         "Opção não conhecida pra incomodação :compression: :angry:!"
